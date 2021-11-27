@@ -6,7 +6,9 @@
   "repository": "https://github.com/foskogvik/devconnector",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently 'yarn run server' 'yarn run client'"
   },
   "author": "Fredrik Skogvik",
   "license": "MIT",
